@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 857px;
+    height: 313px;
+    margin: 50px auto 0;
+    background: lightgrey;
+}
+img{
+    margin-top:9.5px;
+    margin-left:9.3px;
+}
+.div1,.div2,.div3,.div4,.div5{
+    float: left;
+}

@@ -1,0 +1,75 @@
+.container{
+    width: 647px;
+    height: 389px;
+    background: lightgrey;
+    margin: 0 auto;
+    padding:10px;
+    font-size: 14px;
+    line-height:1.8em;
+}
+.div1,.div2{
+    width: 47%;
+}
+.div1{
+    float: left;
+}
+.div2{
+    float: right;
+}
+.div111,.div211{
+    width: 45%;
+}
+.div112,.div212{
+    width: 55%;
+}
+.div111,.div211{
+    float: left;
+}
+.div112,.div212{
+    float:right;
+}
+.div12,.div22{
+    clear: both;
+}
+.div11,.div21{
+    font-size: 12px;
+    line-height:1.8em;
+    height: 118px;
+    padding-bottom:15px;
+    border-bottom: dotted 1px gainsboro;
+}
+.div112 ul,.div212 ul{
+    height: 118px;
+    line-height:2em;
+}
+.div111,.div211{
+    padding-top: 5px;
+}
+.div12,.div22{
+    margin-top: 10px;
+}
+.div1111{
+    margin: 0 ;
+    width: 130px;
+}
+ul{
+    margin: 0;
+    padding-left:15px;
+}
+.liimg{
+    margin-top: 10px;
+    list-style: none;
+}
+.liimg2{
+    margin-top: 10px;
+    height: 25px;
+}
+.liimg img{
+    height: 25px;
+    vertical-align: middle;
+}
+.div131,.div231{
+    margin:10px 0 ;
+    text-align:right;
+    color: gray;
+}
