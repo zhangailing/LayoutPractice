@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<style>
+body
+{
+    background-color:#323232;
+	color:#fff;
+	font-family:'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+}
+form
+{ 
+   position:relative;
+   text-align:center;
+}   
+fieldset
+{
+    position:relative;
+	width:auto;
+	display: block;
+    border:5px solid #DE5E60;
+	margin-top:150px;
+	margin-left:350px;
+	margin-right:350px;
+}
+h3
+{display:inline;}
+input
+{
+width:255px;
+height:30px;
+margin:15px;
+
+}
+#contact_id
+{
+width:200px;
+margin-right:px;
+}
+.mianshi
+{
+display:none;
+}
+
+</style>
+</head>
+<body>
+
+<form action="">
+<fieldset>
+<legend><h2>&nbsp;您的面试进度如下：</h2></legend>
+<h3>学&nbsp;号：</h3><input id="contact_id" type="text" placeholder="学号：" value="" name="id">
+<button type="button" style="background:#DE5E60;height:35px;width:50px;border:2px solid #fff;">查询</button>
+<div class="mianshi">
+<h3>一&nbsp;面：</h3><input id="yimian" type="text" size="30"><br>
+<h3>二&nbsp;面：</h3><input id="ermian" type="text" size="30"><br>
+<h3>三&nbsp;面：</h3><input id="sanmian"type="text" size="30">
+</div>
+</fieldset>
+</form>
+
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script> <!-- jQuery Core -->
+<script type="text/javascript">
+$('button').on('click',function(){
+    $('.mianshi').show();
+    $.getJSON('/ajax/userdata/',function(oData){
+        // oData = {"username":"nimojs","userid":1}
+        $('#info').html('用户名：' + oData.username + '<br>用户ID：' + oData.userid);
+    })
+})
+</script>
+</body>
+</html>
