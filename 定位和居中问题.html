@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+	定位和居中问题
+	</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		 .container{
+			/* display:flex;
+			justify-content: center;
+			align-items: center; */
+			position:relative;
+		} 
+		.grey{
+			width:400px; 
+			background:#eee;
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+		}
+		.yellow{
+			position:absolute;
+
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="grey">
+		<p>
+		百度前端学院啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊百度前端学院啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊百度前端学院啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊百度前端学院啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊	
+		</p>
+		<div class="yellow left"></div>
+		<div class="yellow right"></div>
+	</div>
+</div>
+</body>
+</html>
