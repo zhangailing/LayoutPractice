@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>三栏式布局</title>
+	<link rel="stylesheet" href="">
+<!-- 		<style>
+/* 布局一 绝对定位法，没有找到好的父元素高度自适应方法*/
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	padding:20px;
+}
+.container{
+	position: relative;
+	height:410px;
+	background:#eee;
+	border:1px solid #999; 
+	padding:20px;
+
+}
+.container:after{
+	content:"";
+	height:0;
+	visibility:hidden;
+	display:block;
+	clear:both;
+}
+.left,.right{
+	position: absolute;
+	background:#fff;
+	border:1px solid #999; 
+	top:20px;
+}
+.left{
+	width:200px;
+	height:120px;
+	left:20px;
+}
+.mid{
+	border:1px solid #999; 
+	margin-left:220px;
+	margin-right:140px;
+	height:360px; 
+	background:#fff;
+}
+.right{
+	width:120px;
+	height:405px;
+	right:20px;
+}
+</style> -->
+
+<!-- 		<style>
+/* 布局二 margin负值法*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	padding:20px;
+}
+.container{
+	padding:20px;
+	background:#eee;
+	border:1px solid #999;
+}
+.container:after{
+	content:"";
+	height:0;
+	visibility:hidden;
+	display:block;
+	clear:both;
+}
+.main{
+	width:100%;
+	float:left;
+}
+.main .body{
+	height:360px;
+	margin:0 140px 0 220px;
+	background:#fff;
+	border:1px solid #999;	
+}
+.left,.right{
+	float:left;
+	background:#fff;
+	border:1px solid #999;
+}
+.left{
+	width:200px;
+	height:120px;
+	margin-left:-100%;
+	padding: 20px;
+}
+.logo{
+	height:78px;
+	width:78px;
+	float: left;
+	background:#eee;
+	border:1px solid #999;	
+	text-align: center;
+	padding:5px;
+	word-wrap: break-word;
+}
+.inf{
+	height:78px;
+	margin-left:85px;
+	word-wrap: break-word;
+
+}
+.right{
+	width:120px;
+	height:405px;
+	margin-left:-120px;
+	padding: 20px;
+}
+.right .logo{
+	margin-bottom:17px;
+}
+.right .logo:last-of-type{
+	margin-bottom:0;
+}
+</style>
+ -->
+<style>
+/* 布局三 自身浮动法*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	padding:20px;
+}
+.container{
+	padding:20px;
+	background:#eee;
+	border:1px solid #999;
+	*zoom:1;
+}
+.container:after{
+	content:"";
+	height:0;
+	visibility:hidden;
+	display:block;
+	clear:both;
+}
+.left,.right{
+	background:#fff;
+	border:1px solid #999;
+}
+.left{
+	width:198px;
+	height:120px;
+	padding:20px;
+	float:left;
+}
+.logo{
+	height:78px;
+	width:78px;
+	float: left;
+	background:#eee;
+	border:1px solid #999;	
+	text-align: center;
+	word-wrap: break-word;
+}
+.right{
+	width:118px;
+	height:405px;
+	padding:20px;
+	float:right;
+}
+.right .logo{
+	margin-bottom:17px;
+}
+.right .logo:last-of-type{
+	margin-bottom:0;
+}
+.mid{
+	height:360px;
+	margin:0 140px 0 220px;
+	border:1px solid #999;
+	background: #fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	
+<!-- 方法一 
+<div class="left"></div>
+<div class="mid"></div>
+<div class="right"></div> -->
+
+<!-- 方法二	
+<div class="main">
+	<div class="body"></div>
+</div>
+<div class="left">
+	<div class="logo">团队logo:80*80</div>
+	<p class="inf">团队名称</p>
+</div>
+<div class="right">
+	<div class="logo">个人logo:80*80</div>
+	<div class="logo">个人logo:80*80</div>
+	<div class="logo">个人logo:80*80</div>
+	<div class="logo">个人logo:80*80</div>
+</div> -->
+
+<div class="left">
+	<div class="logo"></div>
+</div>
+<div class="right">
+	<div class="logo"></div>
+	<div class="logo"></div>
+	<div class="logo"></div>
+	<div class="logo"></div>
+</div>
+<div class="mid"></div>
+</div>
+</body>
+</html>
